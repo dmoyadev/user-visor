@@ -1,5 +1,5 @@
 <template>
-	<v-tooltip bottom>
+	<v-tooltip right>
 		<template v-slot:activator="{ on, attrs }">
 			<v-icon :color="color"
 			        v-bind="attrs"
