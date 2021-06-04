@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="home">
 		<vue-headful :title="pageTitle"/>
 
 		<div v-if="user" class="pa-10">
@@ -185,9 +185,7 @@ export default {
 			[this.user] = JSON.parse(users)
 				.filter(user => user.login.username === this.$route.params.id);
 
-			if(!this.user) {
-				this.checkInFavorites();
-			}
+			this.checkInFavorites();
 
 			this.loading = false;
 		} else {
@@ -200,7 +198,6 @@ export default {
 			let favorites = [];
 			const rawFavorites = localStorage.getItem('favorites');
 			if(rawFavorites) {
-				debugger;
 				favorites = JSON.parse(rawFavorites);
 				let [user] = favorites.filter(user => user.login.username === this.$route.params.id);
 				if(user) {

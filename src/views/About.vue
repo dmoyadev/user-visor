@@ -1,7 +1,7 @@
 <template>
-	<div>
+	<div class="home pa-10 pt-9">
 		<vue-headful title="Sobre mí | Visor de Usuarios"/>
-		Dani made this!
+		¡Esto lo ha hecho <a href="https://danimoya.es">Daniel Moya Leiva</a>!
 	</div>
 </template>
 
