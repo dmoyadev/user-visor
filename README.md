@@ -1,4 +1,5 @@
-# user-visor
+# User Visor
+Test project with Vue
 
 ## Project setup
 ```
