@@ -1,17 +1,23 @@
 # User Visor
 Test project with Vue
 
+This project is intented to have a backend with NodeJS but I ran out of time and have changed it with a localStorage management. Maybe in the future I can dedicate more time to it!
+
+Done in just 3 and a half hours by Daniel Moya, located in Jaén, Spain.
+
+
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+Add a `.env` file in the root directory with two properties:
 ```
-npm run serve
+VUE_APP_API_URL = 'https://randomuser.me/'
+VUE_APP_GOOGLE_API_KEY = <custom key of Google Maps API>
 ```
 
-### Compiles and minifies for production
+### Compile and minify for production
 ```
 npm run build
 ```
